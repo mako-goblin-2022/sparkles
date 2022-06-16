@@ -3,7 +3,7 @@ import React, { useState} from 'react'
 const Pixel = () => {
   const [style, setStyle] = useState({backgroundColor: '#fff', height: '20px', width: '20px'})
   
-  const clickHandler = () => {
+  const drawHandler = () => {
     setStyle({
       ...style,
       backgroundColor: 'black'
@@ -18,7 +18,7 @@ const Pixel = () => {
   }
 
   return (
-  <div style={style} onClick={clickHandler} onDoubleClick={eraseHandler} ></div>
+  <div style={style} draggable={true} onClick={drawHandler} onDoubleClick={eraseHandler} onDragEnter={drawHandler}></div>
 
 )}
 
