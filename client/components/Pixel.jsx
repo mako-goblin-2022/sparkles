@@ -10,8 +10,15 @@ const Pixel = () => {
     })
   }
 
+  const eraseHandler = () => {
+    setStyle({
+     ...style, 
+     backgroundColor: 'white'
+    })
+  }
+
   return (
-  <div style={style} onClick={clickHandler}></div>
+  <div style={style} onClick={clickHandler} onDoubleClick={eraseHandler} ></div>
 
 )}
 
