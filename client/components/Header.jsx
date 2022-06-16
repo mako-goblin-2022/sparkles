@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
-      <p>✨Sparkle Canvas✨</p>
+      <h1>✨Sparkle Canvas✨</h1>
       </header>
   )
 }
