@@ -1,7 +1,11 @@
 import React from 'react'
+import Pixel from './Pixel'
 
 const App = () => {
-  return <div>React development has begun!</div>
+  const pixels = Array.from({length: 1200}, () => [<Pixel /> ])
+  return <div>
+    {pixels}
+  </div>
 }
 
 export default App
