@@ -19,7 +19,6 @@ const Pixel = () => {
 
   return (
   <div style={style} draggable={true} onClick={drawHandler} onDoubleClick={eraseHandler} onDragEnter={drawHandler}></div>
-
 )}
 
 
