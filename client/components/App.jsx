@@ -6,7 +6,7 @@ import ColorSelector from './ColorSelector'
 
 const App = () => {
   const [selectedColor, setColor] = useState("#f44336")
-  const pixels = Array.from({length: 1200}, () => [<Pixel /> ])
+  const pixels = Array.from({length: 1200}, (pixel, i) => [<Pixel key={i} colour={selectedColor}/>])
   return( 
   <>
  <Header/>
