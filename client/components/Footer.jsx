@@ -1,10 +1,15 @@
 import React from 'react'
 
 const Footer = () => {
+
+  const refreshPage = () => {
+    window.location.reload()
+  }
+
   return (
     <footer>
-      <p>Sparkles</p>
-      </footer>
+      <button onClick={refreshPage}>Reset</button>
+    </footer>
   )
 }
 

@@ -48,3 +48,11 @@ footer{
 .twitter-picker{
   height: 100px;
 }
+
+button{ 
+  font-family: 'Courier New', Courier, monospace;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(195, 195, 255, 0.624);
+
+}
