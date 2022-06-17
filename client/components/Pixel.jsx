@@ -1,12 +1,12 @@
 import React, { useState} from 'react'
 
-const Pixel = () => {
+const Pixel = (props) => {
   const [style, setStyle] = useState({backgroundColor: '#fff', height: '20px', width: '20px'})
-  
+
   const drawHandler = () => {
     setStyle({
       ...style,
-      backgroundColor: 'black'
+      backgroundColor: props.colour
     })
   }
 
