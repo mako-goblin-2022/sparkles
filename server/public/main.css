@@ -2,13 +2,15 @@ html, body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
+  background-color: #8582BF;
+  font-family: 'La Belle Aurore', cursive;
 }
 
-header{
+header {
   text-align: center;
-  height: 20vh;
   width: 100%;
-
+  margin: 20px 0 15px 0;
+  color: #FFF6D3;
 }
 
 #app {
@@ -17,23 +19,19 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(41, 41, 144);
 }
 
 div {
   display: flex;
   flex-wrap: wrap;
- 
 }
 
 #canvas {
   max-height: 800px;
   max-width: 800px;
-  /* margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto; */
-  border: solid 5px black;
-  cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" height="64" width="64"><text y="28" font-size="32">🖌️</text><path d="M0,2 L0,0 L2,0" fill="white" /></svg>'), auto;
+  margin-top: 0;
+  border:  none;
+  cursor: url('./paintbrush.png'), default;
 }
 
 footer{
@@ -43,17 +41,29 @@ footer{
   margin-top: auto;
   height: 10vh;
   width: 100%;
-  
 }
 
 .twitter-picker{
   height: 100px;
 }
 
-button{ 
+button { 
   font-family: 'Courier New', Courier, monospace;
   height: 30px;
   text-align: center;
-  background-color: rgba(195, 195, 255, 0.624);
+  background-color: #FFF6D3;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
 
+button:hover {
+  background-color: #fff;
+  padding: 4px 14px;
+}
+
+#stars {
+  height: 1em
 }
