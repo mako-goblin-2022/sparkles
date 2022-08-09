@@ -47,7 +47,7 @@ footer{
   height: 100px;
 }
 
-button{ 
+button { 
   font-family: 'Courier New', Courier, monospace;
   height: 30px;
   text-align: center;
@@ -56,6 +56,12 @@ button{
   border-radius: 4px;
   padding: 4px 10px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #fff;
+  padding: 4px 14px;
 }
 
 #stars {
