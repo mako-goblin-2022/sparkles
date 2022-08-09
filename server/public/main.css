@@ -2,14 +2,15 @@ html, body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
-  background-color: rgb(41, 41, 144);
+  background-color: #8582BF;
+  font-family: 'La Belle Aurore', cursive;
 }
 
-header{
+header {
   text-align: center;
   width: 100%;
-  margin: 20px 0 20px 0;
-  color: #FFF6D3
+  margin: 20px 0 15px 0;
+  color: #FFF6D3;
 }
 
 #app {
@@ -29,8 +30,8 @@ div {
   max-height: 800px;
   max-width: 800px;
   margin-top: 0;
-  border: solid 5px black;
-  cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" height="64" width="64"><text y="28" font-size="32">🖌️</text><path d="M0,2 L0,0 L2,0" fill="white" /></svg>'), auto;
+  border:  none;
+  cursor: url('./paintbrush.png'), default;
 }
 
 footer{
